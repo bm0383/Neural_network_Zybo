@@ -1,0 +1,1416 @@
+
+*** Running vivado
+    with args -log neural_network_control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source neural_network_control.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source neural_network_control.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Blaz/ip_repo/for_and_back_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top neural_network_control -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14264 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 713.492 ; gain = 176.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'neural_network_control' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:41]
+	Parameter NUM_OF_INPUTS bound to: 4 - type: integer 
+	Parameter NUM_OF_EXAMPLES bound to: 16 - type: integer 
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter MAX_NEURONS bound to: 4 - type: integer 
+	Parameter NUM_OF_LAYERS bound to: 2 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+	Parameter NEURONS_IN_LAYER bound to: 32'b01000100001000000000000000000000 
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:160]
+WARNING: [Synth 8-614] signal 'State' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:231]
+WARNING: [Synth 8-614] signal 'State' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:253]
+	Parameter NUM_OF_INPUTS bound to: 4 - type: integer 
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter MAX_NEURONS bound to: 4 - type: integer 
+	Parameter NUM_OF_LAYERS bound to: 2 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+	Parameter NEURONS_IN_LAYER bound to: 1142947840 - type: integer 
+INFO: [Synth 8-3491] module 'neural_network' declared at 'C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:6' bound to instance 'nn' of component 'neural_network' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:320]
+INFO: [Synth 8-638] synthesizing module 'neural_network' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:35]
+	Parameter NUM_OF_INPUTS bound to: 4 - type: integer 
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter MAX_NEURONS bound to: 4 - type: integer 
+	Parameter NUM_OF_LAYERS bound to: 2 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+	Parameter NEURONS_IN_LAYER bound to: 1142947840 - type: integer 
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:174]
+WARNING: [Synth 8-614] signal 'State' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:399]
+WARNING: [Synth 8-614] signal 'sel_div' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:399]
+WARNING: [Synth 8-614] signal 'num_of_before' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:399]
+WARNING: [Synth 8-614] signal 'current_weights' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:399]
+WARNING: [Synth 8-614] signal 'w_inputs' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:399]
+	Parameter PORTS bound to: 4 - type: integer 
+	Parameter NUM_OF_LAYERS bound to: 2 - type: integer 
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'calculate_forward' declared at 'C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:7' bound to instance 'forward' of component 'calculate_forward' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:479]
+INFO: [Synth 8-638] synthesizing module 'calculate_forward' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:25]
+	Parameter PORTS bound to: 4 - type: integer 
+	Parameter NUM_OF_LAYERS bound to: 2 - type: integer 
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'lut' declared at 'C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:4' bound to instance 'luts' of component 'lut' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'lut' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:17]
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+WARNING: [Synth 8-5830] Case choice is outside the range of select [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:107]
+WARNING: [Synth 8-6014] Unused sequential element temp_in1_reg was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:25]
+WARNING: [Synth 8-6014] Unused sequential element temp_in2_reg was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:26]
+WARNING: [Synth 8-6014] Unused sequential element temp_in_index_reg was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'lut' (1#1) [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:17]
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'lut' declared at 'C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:4' bound to instance 'luts' of component 'lut' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:80]
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'lut' declared at 'C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:4' bound to instance 'luts' of component 'lut' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:80]
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'lut' declared at 'C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd:4' bound to instance 'luts' of component 'lut' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element save_ind_reg was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:119]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg[0] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg[1] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg[2] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg[3] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'calculate_forward' (2#1) [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:25]
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter MAX_NEURONS bound to: 4 - type: integer 
+	Parameter NUM_OF_LAYERS bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'weight_ram' declared at 'C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/weight_ram.vhd:5' bound to instance 'ram' of component 'weight_ram' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:496]
+INFO: [Synth 8-638] synthesizing module 'weight_ram' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/weight_ram.vhd:20]
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter MAX_NEURONS bound to: 4 - type: integer 
+	Parameter NUM_OF_LAYERS bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'weight_ram' (3#1) [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/weight_ram.vhd:20]
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter MAX_NEURONS bound to: 4 - type: integer 
+	Parameter NUM_OF_LAYERS bound to: 2 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+	Parameter NEURONS_IN_LAYER bound to: 1142947840 - type: integer 
+INFO: [Synth 8-3491] module 'calculate_backward' declared at 'C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:6' bound to instance 'backward' of component 'calculate_backward' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:512]
+INFO: [Synth 8-638] synthesizing module 'calculate_backward' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:31]
+	Parameter BIT_WIDTH bound to: 16 - type: integer 
+	Parameter MAX_NEURONS bound to: 4 - type: integer 
+	Parameter NUM_OF_LAYERS bound to: 2 - type: integer 
+	Parameter F bound to: 8 - type: integer 
+	Parameter NEURONS_IN_LAYER bound to: 1142947840 - type: integer 
+WARNING: [Synth 8-614] signal 'weights_update_temp' is read in the process but is not in the sensitivity list [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:69]
+WARNING: [Synth 8-6014] Unused sequential element NUM_OF_NEURONS_NEXT_VAR_reg was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element NUM_OF_NEURONS_BEFORE_VAR_reg was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element w_vector1_reg[4] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:117]
+WARNING: [Synth 8-6014] Unused sequential element w_vector1_reg[9] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:117]
+WARNING: [Synth 8-6014] Unused sequential element w_vector1_reg[14] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:117]
+WARNING: [Synth 8-6014] Unused sequential element w_vector1_reg[19] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:117]
+WARNING: [Synth 8-6014] Unused sequential element w_vector2_reg[4] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element w_vector2_reg[9] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element w_vector2_reg[14] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element w_vector2_reg[19] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element mula_reg[4] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:139]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg[0] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:142]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg[1] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:142]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg[2] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:142]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg[3] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:142]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg[4] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:142]
+WARNING: [Synth 8-6014] Unused sequential element w_vector_reg[4] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element w_vector_reg[9] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element w_vector_reg[14] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element w_vector_reg[19] was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:144]
+INFO: [Synth 8-256] done synthesizing module 'calculate_backward' (4#1) [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element sum_aux_reg was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:449]
+INFO: [Synth 8-256] done synthesizing module 'neural_network' (5#1) [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:35]
+WARNING: [Synth 8-6014] Unused sequential element period_reg was removed.  [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'neural_network_control' (6#1) [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:41]
+WARNING: [Synth 8-3331] design calculate_backward has unconnected port sel[4]
+WARNING: [Synth 8-3331] design calculate_backward has unconnected port sel[3]
+WARNING: [Synth 8-3331] design weight_ram has unconnected port clk
+WARNING: [Synth 8-3331] design calculate_forward has unconnected port sel[4]
+WARNING: [Synth 8-3331] design calculate_forward has unconnected port sel[3]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[319]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[318]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[317]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[316]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[315]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[314]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[313]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[312]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[311]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[310]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[309]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[308]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[307]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[306]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[305]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[304]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[303]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[302]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[301]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[300]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[299]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[298]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[297]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[296]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[295]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[294]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[293]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[292]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[291]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[290]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[289]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[288]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[287]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[286]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[285]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[284]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[283]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[282]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[281]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[280]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[279]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[278]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[277]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[276]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[275]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[274]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[273]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[272]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[271]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[270]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[269]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[268]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[267]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[266]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[265]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[264]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[263]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[262]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[261]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[260]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[259]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[258]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[257]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[256]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[255]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[254]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[253]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[252]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[251]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[250]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[249]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[248]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[247]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[246]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[245]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[244]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[243]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[242]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[241]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[240]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[239]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[238]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[237]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[236]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[235]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[234]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[233]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[232]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[231]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[230]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[229]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[228]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[227]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[226]
+WARNING: [Synth 8-3331] design neural_network has unconnected port init_weights[225]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 814.684 ; gain = 277.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 814.684 ; gain = 277.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 814.684 ; gain = 277.645
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/constrs_1/imports/Desktop/Zybo-Master.xdc]
+Finished Parsing XDC File [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/constrs_1/imports/Desktop/Zybo-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/constrs_1/imports/Desktop/Zybo-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/neural_network_control_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/neural_network_control_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 980.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 980.992 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 980.992 ; gain = 443.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 980.992 ; gain = 443.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 980.992 ; gain = 443.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "out_vec_rez" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nevron_array[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'total_error_out_reg[15:0]' into 'total_error_reg[15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:283]
+WARNING: [Synth 8-327] inferring latch for variable 'w_inputs_pop_reg' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd:406]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 980.992 ; gain = 443.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |calculate_backward__GB0              |           1|     32675|
+|2     |calculate_backward__GB1              |           1|     29674|
+|3     |calculate_backward__GB2              |           1|     28122|
+|4     |calculate_backward__GB3              |           1|     12550|
+|5     |calculate_backward__GB4              |           1|     28560|
+|6     |calculate_backward__GB5              |           1|     12240|
+|7     |calculate_backward__GB6              |           1|     20400|
+|8     |neural_network__GCB0                 |           1|     30799|
+|9     |neural_network__GCB1                 |           1|      8370|
+|10    |neural_network__GCB2                 |           1|     20826|
+|11    |neural_network__GCB3                 |           1|     20590|
+|12    |neural_network__GCB4                 |           1|     22001|
+|13    |neural_network__GCB5                 |           1|     20463|
+|14    |neural_network__GCB6                 |           1|     16572|
+|15    |neural_network__GCB7                 |           1|     28560|
+|16    |neural_network__GCB8                 |           1|      8160|
+|17    |neural_network__GCB9                 |           1|     42012|
+|18    |neural_network__GCB10                |           1|     23750|
+|19    |neural_network__GCB11                |           1|     20152|
+|20    |neural_network__GCB12                |           1|      3471|
+|21    |neural_network_control__GCB0         |           1|     32640|
+|22    |case__347_neural_network_control__GD |           1|     16320|
+|23    |case__348_neural_network_control__GD |           1|     16320|
+|24    |neural_network_control__GCB3         |           1|     32640|
+|25    |neural_network_control__GCB4         |           1|     28090|
+|26    |case__358_neural_network_control__GD |           1|     16320|
+|27    |neural_network_control__GCB6         |           1|     33664|
+|28    |case__359_neural_network_control__GD |           1|     16320|
+|29    |case__352_neural_network_control__GD |           1|     16320|
+|30    |neural_network_control__GCB9         |           1|     32640|
+|31    |case__350_neural_network_control__GD |           1|     16320|
+|32    |case__349_neural_network_control__GD |           1|     16320|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     16 Bit       Adders := 5     
+	   3 Input     16 Bit       Adders := 8     
+	   2 Input     16 Bit       Adders := 25    
+	   5 Input     16 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 31    
+	   3 Input      5 Bit       Adders := 2     
+	   8 Input      5 Bit       Adders := 2     
+	   6 Input      5 Bit       Adders := 3     
+	   9 Input      5 Bit       Adders := 2     
+	   4 Input      5 Bit       Adders := 2     
+	   5 Input      5 Bit       Adders := 2     
+	   7 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   7 Input      2 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 3     
+	   4 Input      2 Bit       Adders := 3     
+	   6 Input      2 Bit       Adders := 2     
+	   3 Input      2 Bit       Adders := 2     
+	   5 Input      2 Bit       Adders := 1     
++---Registers : 
+	              320 Bit    Registers := 4     
+	               64 Bit    Registers := 10    
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 139   
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input    320 Bit        Muxes := 32    
+	   3 Input     64 Bit        Muxes := 3     
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 77    
+	   3 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 71    
+	   4 Input     16 Bit        Muxes := 16    
+	  73 Input     16 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      7 Bit        Muxes := 14    
+	   2 Input      5 Bit        Muxes := 97    
+	   3 Input      5 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 44    
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module neural_network_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 5     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 4     
+Module calculate_backward 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 19    
+	   3 Input      5 Bit       Adders := 1     
+	   8 Input      5 Bit       Adders := 1     
+	   6 Input      5 Bit       Adders := 1     
+	   9 Input      5 Bit       Adders := 1     
+	   7 Input      2 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 3     
+	   4 Input      2 Bit       Adders := 3     
+	   6 Input      2 Bit       Adders := 2     
+	   3 Input      2 Bit       Adders := 2     
+	   5 Input      2 Bit       Adders := 1     
++---Registers : 
+	              320 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 81    
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 52    
+	   2 Input     16 Bit        Muxes := 36    
+	   4 Input     16 Bit        Muxes := 16    
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 85    
+	   3 Input      5 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module lut__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  73 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module lut__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  73 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module lut__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  73 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module lut 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  73 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module calculate_forward 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     16 Bit       Adders := 4     
+	   9 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   4 Input      5 Bit       Adders := 2     
+	   5 Input      5 Bit       Adders := 2     
+	   6 Input      5 Bit       Adders := 2     
+	   7 Input      5 Bit       Adders := 1     
+	   8 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 51    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 20    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 17    
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module weight_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	              320 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    320 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module neural_network 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 20    
+	   4 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 16    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 5     
++---Registers : 
+	              320 Bit    Registers := 1     
+	               64 Bit    Registers := 7     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input    320 Bit        Muxes := 31    
+	   3 Input     64 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 18    
+	   2 Input      7 Bit        Muxes := 14    
+	   2 Input      5 Bit        Muxes := 11    
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 23    
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O4[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O4[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O4[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O4[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O7[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O7[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O7[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O7[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O9[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O9[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O9[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB0 has port O9[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port P[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O12[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O12[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O12[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O12[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O13[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O13[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O13[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O13[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O15[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O15[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O15[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O15[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O16[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O16[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O16[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O16[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O17[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O17[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O17[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O17[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O18[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O18[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O18[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O18[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O19[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O19[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O19[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O19[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O20[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O20[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O20[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O20[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O21[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O21[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O21[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O21[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O22[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O22[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O22[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O22[0] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O23[3] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O23[2] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O23[1] driven by constant 0
+WARNING: [Synth 8-3917] design calculate_backward__GB1 has port O23[0] driven by constant 0
+INFO: [Synth 8-4471] merging register 'inputs_temp_reg[3][15:0]' into 'inputs_temp_reg[3][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:92]
+INFO: [Synth 8-4471] merging register 'inputs_temp_reg[2][15:0]' into 'inputs_temp_reg[2][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:92]
+INFO: [Synth 8-4471] merging register 'inputs_temp_reg[1][15:0]' into 'inputs_temp_reg[1][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:92]
+INFO: [Synth 8-4471] merging register 'inputs_temp_reg[0][15:0]' into 'inputs_temp_reg[0][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:92]
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[8] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[8] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[13] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[13] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[18] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[18] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[3] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[3] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B2.
+DSP Report: register inputs_temp_reg[3] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register mulb_reg[3] is absorbed into DSP ARG.
+DSP Report: register mula_reg[3] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[7] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[7] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[12] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[12] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[17] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[17] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[2] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[2] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B2.
+DSP Report: register inputs_temp_reg[2] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register mulb_reg[2] is absorbed into DSP ARG.
+DSP Report: register mula_reg[2] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[6] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[6] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[11] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[11] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[16] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[16] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[1] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B2.
+DSP Report: register inputs_temp_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register mulb_reg[1] is absorbed into DSP ARG.
+DSP Report: register mula_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[5] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[5] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[10] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[10] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register delta_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[15] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[15] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register w_vector2_reg[0] is absorbed into DSP ARG.
+DSP Report: register w_vector1_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B2.
+DSP Report: register inputs_temp_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B2.
+DSP Report: register mulb_reg[0] is absorbed into DSP ARG.
+DSP Report: register mula_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register delta_reg[3] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register delta_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[2] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register delta_reg[2] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[3] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'save_ind_2_reg[4]__0/Q' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'save_ind_2_reg[3]__0/Q' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'save_ind_2_reg[2]__0/Q' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'save_ind_2_reg[1]__0/Q' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'save_ind_2_reg[0]__0/Q' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:86]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'save_ind_reg[1]__0/Q' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:85]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:85]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'save_ind_reg[0]__0/Q' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:85]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:85]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:85]
+INFO: [Synth 8-4471] merging register 'mu1_reg[3][15:0]' into 'mu1_reg[3][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[2][15:0]' into 'mu1_reg[2][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[2][15:0]' into 'mu1_reg[2][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[2][15:0]' into 'mu1_reg[2][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[3][15:0]' into 'mu1_reg[3][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[1][15:0]' into 'mu1_reg[1][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[1][15:0]' into 'mu1_reg[1][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[1][15:0]' into 'mu1_reg[1][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[1][15:0]' into 'mu1_reg[1][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[3][15:0]' into 'mu1_reg[3][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[0][15:0]' into 'mu1_reg[0][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[0][15:0]' into 'mu1_reg[0][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[0][15:0]' into 'mu1_reg[0][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+INFO: [Synth 8-4471] merging register 'mu1_reg[0][15:0]' into 'mu1_reg[0][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd:165]
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[3] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[3] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[2] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[2] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[3] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[2] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[2] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[3] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register mu1_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+INFO: [Synth 8-3886] merging instance 'inputs_before_reg[4][0]' (FDRE) to 'inputs_before_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'inputs_before_reg[4][1]' (FDRE) to 'inputs_before_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'inputs_before_reg[4][2]' (FDRE) to 'inputs_before_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'inputs_before_reg[4][3]' (FDRE) to 'inputs_before_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'inputs_before_reg[4][4]' (FDRE) to 'inputs_before_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'inputs_before_reg[4][5]' (FDRE) to 'inputs_before_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'inputs_before_reg[4][6]' (FDRE) to 'inputs_before_reg[4][15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inputs_before_reg[4][15] )
+INFO: [Synth 8-5546] ROM "out_vec_rez" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "out_vec_rez" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "out_vec_rez" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "out_vec_rez" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'w_s_reg[1][15:0]' into 'w_s_reg[1][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:113]
+INFO: [Synth 8-4471] merging register 'w_s_reg[0][15:0]' into 'w_s_reg[0][15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd:113]
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register w_s_reg[1] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A2*B.
+DSP Report: register w_s_reg[0] is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port P[11] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port P[3] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O57[11] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O57[3] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O57[2] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O57[1] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O57[0] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O58[11] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O58[3] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O58[2] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O58[1] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O58[0] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O59[11] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O59[3] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O59[2] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O59[1] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O59[0] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O61[11] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O61[3] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O61[2] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O61[1] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O61[0] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O62[11] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O62[3] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O62[2] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O62[1] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O62[0] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O63[11] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O63[3] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O63[2] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O63[1] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O63[0] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O65[11] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O65[3] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O65[2] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O65[1] driven by constant 0
+WARNING: [Synth 8-3917] design neural_network__GCB0 has port O65[0] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][0]' (FDRE) to 'forward/x_s_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][1]' (FDRE) to 'forward/x_s_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][2]' (FDRE) to 'forward/x_s_reg[4][3]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][3]' (FDRE) to 'forward/x_s_reg[4][4]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][4]' (FDRE) to 'forward/x_s_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][5]' (FDRE) to 'forward/x_s_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][6]' (FDRE) to 'forward/x_s_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][7]' (FDRE) to 'forward/x_s_reg[4][9]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][9]' (FDRE) to 'forward/x_s_reg[4][10]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][10]' (FDRE) to 'forward/x_s_reg[4][11]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][11]' (FDRE) to 'forward/x_s_reg[4][12]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][12]' (FDRE) to 'forward/x_s_reg[4][13]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][13]' (FDRE) to 'forward/x_s_reg[4][14]'
+INFO: [Synth 8-3886] merging instance 'forward/x_s_reg[4][14]' (FDRE) to 'forward/x_s_reg[4][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (forward/\x_s_reg[4][15] )
+INFO: [Synth 8-3886] merging instance 'forward/NUM_OF_NEURONS_BEFORE_VAR_reg[3]' (FDE) to 'forward/NUM_OF_NEURONS_BEFORE_VAR_reg[4]'
+INFO: [Synth 8-3886] merging instance 'forward/NUM_OF_NEURONS_BEFORE_VAR_reg[4]' (FDE) to 'forward/NUM_OF_NEURONS_BEFORE_VAR_reg[0]'
+INFO: [Synth 8-3886] merging instance 'forward/NUM_OF_NEURONS_BEFORE_VAR_reg[0]' (FDE) to 'forward/NUM_OF_NEURONS_VAR_reg[4]'
+INFO: [Synth 8-3886] merging instance 'forward/NUM_OF_NEURONS_VAR_reg[0]' (FDE) to 'forward/NUM_OF_NEURONS_VAR_reg[4]'
+INFO: [Synth 8-3886] merging instance 'forward/NUM_OF_NEURONS_VAR_reg[3]' (FDE) to 'forward/NUM_OF_NEURONS_VAR_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (forward/\NUM_OF_NEURONS_VAR_reg[4] )
+INFO: [Synth 8-3886] merging instance 'forward/luts[3].luts/out_vec_rez_reg[9]' (FDR) to 'forward/luts[3].luts/out_vec_rez_reg[10]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[3].luts/out_vec_rez_reg[10]' (FDR) to 'forward/luts[3].luts/out_vec_rez_reg[11]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[3].luts/out_vec_rez_reg[11]' (FDR) to 'forward/luts[3].luts/out_vec_rez_reg[12]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[3].luts/out_vec_rez_reg[12]' (FDR) to 'forward/luts[3].luts/out_vec_rez_reg[13]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[3].luts/out_vec_rez_reg[13]' (FDR) to 'forward/luts[3].luts/out_vec_rez_reg[14]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[3].luts/out_vec_rez_reg[14]' (FDR) to 'forward/luts[3].luts/out_vec_rez_reg[15]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[2].luts/out_vec_rez_reg[9]' (FDR) to 'forward/luts[2].luts/out_vec_rez_reg[10]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[2].luts/out_vec_rez_reg[10]' (FDR) to 'forward/luts[2].luts/out_vec_rez_reg[11]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[2].luts/out_vec_rez_reg[11]' (FDR) to 'forward/luts[2].luts/out_vec_rez_reg[12]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[2].luts/out_vec_rez_reg[12]' (FDR) to 'forward/luts[2].luts/out_vec_rez_reg[13]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[2].luts/out_vec_rez_reg[13]' (FDR) to 'forward/luts[2].luts/out_vec_rez_reg[14]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[2].luts/out_vec_rez_reg[14]' (FDR) to 'forward/luts[2].luts/out_vec_rez_reg[15]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[1].luts/out_vec_rez_reg[9]' (FDR) to 'forward/luts[1].luts/out_vec_rez_reg[10]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[1].luts/out_vec_rez_reg[10]' (FDR) to 'forward/luts[1].luts/out_vec_rez_reg[11]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[1].luts/out_vec_rez_reg[11]' (FDR) to 'forward/luts[1].luts/out_vec_rez_reg[12]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[1].luts/out_vec_rez_reg[12]' (FDR) to 'forward/luts[1].luts/out_vec_rez_reg[13]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[1].luts/out_vec_rez_reg[13]' (FDR) to 'forward/luts[1].luts/out_vec_rez_reg[14]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[1].luts/out_vec_rez_reg[14]' (FDR) to 'forward/luts[1].luts/out_vec_rez_reg[15]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[0].luts/out_vec_rez_reg[9]' (FDR) to 'forward/luts[0].luts/out_vec_rez_reg[10]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[0].luts/out_vec_rez_reg[10]' (FDR) to 'forward/luts[0].luts/out_vec_rez_reg[11]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[0].luts/out_vec_rez_reg[11]' (FDR) to 'forward/luts[0].luts/out_vec_rez_reg[12]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[0].luts/out_vec_rez_reg[12]' (FDR) to 'forward/luts[0].luts/out_vec_rez_reg[13]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[0].luts/out_vec_rez_reg[13]' (FDR) to 'forward/luts[0].luts/out_vec_rez_reg[14]'
+INFO: [Synth 8-3886] merging instance 'forward/luts[0].luts/out_vec_rez_reg[14]' (FDR) to 'forward/luts[0].luts/out_vec_rez_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\num_of_before_reg[0] )
+INFO: [Synth 8-3886] merging instance 'forward/is_valid_reg[3]' (FDE) to 'forward/is_valid_reg[2]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][9]' (FDE) to 'x_t_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][10]' (FDE) to 'x_t_reg[1][11]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][11]' (FDE) to 'x_t_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][12]' (FDE) to 'x_t_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][13]' (FDE) to 'x_t_reg[1][14]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][14]' (FDE) to 'x_t_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][25]' (FDE) to 'x_t_reg[1][26]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][26]' (FDE) to 'x_t_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][27]' (FDE) to 'x_t_reg[1][28]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][28]' (FDE) to 'x_t_reg[1][29]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][29]' (FDE) to 'x_t_reg[1][30]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][30]' (FDE) to 'x_t_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][41]' (FDE) to 'x_t_reg[1][42]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][42]' (FDE) to 'x_t_reg[1][43]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][43]' (FDE) to 'x_t_reg[1][44]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][44]' (FDE) to 'x_t_reg[1][45]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][45]' (FDE) to 'x_t_reg[1][46]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][46]' (FDE) to 'x_t_reg[1][47]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][57]' (FDE) to 'x_t_reg[1][58]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][58]' (FDE) to 'x_t_reg[1][59]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][59]' (FDE) to 'x_t_reg[1][60]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][60]' (FDE) to 'x_t_reg[1][61]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][61]' (FDE) to 'x_t_reg[1][62]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[1][62]' (FDE) to 'x_t_reg[1][63]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][9]' (FDE) to 'x_t_reg[2][10]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][10]' (FDE) to 'x_t_reg[2][11]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][11]' (FDE) to 'x_t_reg[2][12]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][12]' (FDE) to 'x_t_reg[2][13]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][13]' (FDE) to 'x_t_reg[2][14]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][14]' (FDE) to 'x_t_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][25]' (FDE) to 'x_t_reg[2][26]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][26]' (FDE) to 'x_t_reg[2][27]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][27]' (FDE) to 'x_t_reg[2][28]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][28]' (FDE) to 'x_t_reg[2][29]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][29]' (FDE) to 'x_t_reg[2][30]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][30]' (FDE) to 'x_t_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][41]' (FDE) to 'x_t_reg[2][42]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][42]' (FDE) to 'x_t_reg[2][43]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][43]' (FDE) to 'x_t_reg[2][44]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][44]' (FDE) to 'x_t_reg[2][45]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][45]' (FDE) to 'x_t_reg[2][46]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][46]' (FDE) to 'x_t_reg[2][47]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][57]' (FDE) to 'x_t_reg[2][58]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][58]' (FDE) to 'x_t_reg[2][59]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][59]' (FDE) to 'x_t_reg[2][60]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][60]' (FDE) to 'x_t_reg[2][61]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][61]' (FDE) to 'x_t_reg[2][62]'
+INFO: [Synth 8-3886] merging instance 'x_t_reg[2][62]' (FDE) to 'x_t_reg[2][63]'
+INFO: [Synth 8-3886] merging instance 'forward/is_valid_reg[1]' (FDE) to 'forward/is_valid_reg[0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'total_error_temp_reg[15:0]' into 'total_error_temp_reg[15:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:269]
+INFO: [Synth 8-4471] merging register 'current_example_reg[4:0]' into 'current_example_reg[4:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:268]
+INFO: [Synth 8-4471] merging register 'current_addr_reg[4:0]' into 'current_addr_reg[4:0]' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:227]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:20 ; elapsed = 00:04:59 . Memory (MB): peak = 980.992 ; gain = 443.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|neural_network          | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_network          | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_network          | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_network          | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward__GB2 | A*B2        | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward__GB2 | A*B2        | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward__GB2 | A*B2        | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward__GB2 | A*B2        | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_backward      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|calculate_forward       | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |calculate_backward__GB0              |           1|      2945|
+|2     |calculate_backward__GB1              |           1|      3106|
+|3     |calculate_backward__GB2              |           1|      6831|
+|4     |calculate_backward__GB3              |           1|      2596|
+|5     |calculate_backward__GB4              |           1|      2625|
+|6     |calculate_backward__GB5              |           1|      1125|
+|7     |calculate_backward__GB6              |           1|      1875|
+|8     |neural_network__GCB0                 |           1|      8941|
+|9     |neural_network__GCB1                 |           1|       646|
+|10    |neural_network__GCB2                 |           1|      1976|
+|11    |neural_network__GCB3                 |           1|      1592|
+|12    |neural_network__GCB4                 |           1|      3923|
+|13    |neural_network__GCB5                 |           1|      1911|
+|14    |neural_network__GCB6                 |           1|      1644|
+|15    |neural_network__GCB7                 |           1|      2625|
+|16    |neural_network__GCB8                 |           1|       493|
+|17    |neural_network__GCB9                 |           1|     22478|
+|18    |neural_network__GCB10                |           1|     12553|
+|19    |neural_network__GCB11                |           1|     10678|
+|20    |neural_network__GCB12                |           1|      1181|
+|21    |neural_network_control__GCB0         |           1|      1518|
+|22    |case__347_neural_network_control__GD |           1|       759|
+|23    |case__348_neural_network_control__GD |           1|       759|
+|24    |neural_network_control__GCB3         |           1|      1518|
+|25    |neural_network_control__GCB4         |           1|      1217|
+|26    |case__358_neural_network_control__GD |           1|       759|
+|27    |neural_network_control__GCB6         |           1|      2542|
+|28    |case__359_neural_network_control__GD |           1|       759|
+|29    |case__352_neural_network_control__GD |           1|       759|
+|30    |neural_network_control__GCB9         |           1|      2034|
+|31    |case__350_neural_network_control__GD |           1|       759|
+|32    |case__349_neural_network_control__GD |           1|       759|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:41 ; elapsed = 00:05:21 . Memory (MB): peak = 1029.938 ; gain = 492.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (backwardi_15/\NUM_OF_NEURONS_VAR_reg[4] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:48 ; elapsed = 00:05:27 . Memory (MB): peak = 1034.566 ; gain = 497.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |calculate_backward__GB0              |           1|      1992|
+|2     |calculate_backward__GB1              |           1|      2291|
+|3     |calculate_backward__GB2              |           1|      6737|
+|4     |calculate_backward__GB3              |           1|      2502|
+|5     |calculate_backward__GB4              |           1|       954|
+|6     |calculate_backward__GB5              |           1|       533|
+|7     |calculate_backward__GB6              |           1|       890|
+|8     |neural_network__GCB0                 |           1|      8914|
+|9     |neural_network__GCB1                 |           1|       618|
+|10    |neural_network__GCB2                 |           1|      1180|
+|11    |neural_network__GCB3                 |           1|      1052|
+|12    |neural_network__GCB4                 |           1|      3248|
+|13    |neural_network__GCB5                 |           1|       925|
+|14    |neural_network__GCB6                 |           1|       856|
+|15    |neural_network__GCB7                 |           1|       938|
+|16    |neural_network__GCB8                 |           1|       230|
+|17    |neural_network__GCB9                 |           1|     12011|
+|18    |neural_network__GCB10                |           1|      8342|
+|19    |neural_network__GCB11                |           1|      7437|
+|20    |neural_network__GCB12                |           1|      1161|
+|21    |neural_network_control__GCB0         |           1|       384|
+|22    |case__347_neural_network_control__GD |           1|       192|
+|23    |case__348_neural_network_control__GD |           1|       192|
+|24    |neural_network_control__GCB3         |           1|       384|
+|25    |neural_network_control__GCB4         |           1|       623|
+|26    |case__358_neural_network_control__GD |           1|       192|
+|27    |neural_network_control__GCB6         |           1|      1408|
+|28    |case__359_neural_network_control__GD |           1|       192|
+|29    |case__352_neural_network_control__GD |           1|       192|
+|30    |neural_network_control__GCB9         |           1|       513|
+|31    |case__350_neural_network_control__GD |           1|       192|
+|32    |case__349_neural_network_control__GD |           1|       192|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nni_19/\nn/forward/luts[2].luts/out_vec_rez_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nni_19/\nn/forward/luts[0].luts/out_vec_rez_reg[15] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:12 ; elapsed = 00:06:06 . Memory (MB): peak = 1132.859 ; gain = 595.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------+------------+----------+
+|      |RTL Partition                        |Replication |Instances |
++------+-------------------------------------+------------+----------+
+|1     |calculate_backward__GB0              |           1|       801|
+|2     |calculate_backward__GB1              |           1|       810|
+|3     |calculate_backward__GB2              |           1|      3741|
+|4     |calculate_backward__GB3              |           1|      1480|
+|5     |calculate_backward__GB4              |           1|       272|
+|6     |calculate_backward__GB5              |           1|       144|
+|7     |calculate_backward__GB6              |           1|       240|
+|8     |neural_network__GCB0                 |           1|      3462|
+|9     |neural_network__GCB1                 |           1|       289|
+|10    |neural_network__GCB2                 |           1|       524|
+|11    |neural_network__GCB3                 |           1|       476|
+|12    |neural_network__GCB4                 |           1|      2464|
+|13    |neural_network__GCB5                 |           1|       228|
+|14    |neural_network__GCB6                 |           1|       208|
+|15    |neural_network__GCB7                 |           1|       272|
+|16    |neural_network__GCB8                 |           1|        66|
+|17    |neural_network__GCB9                 |           1|      3887|
+|18    |neural_network__GCB10                |           1|      2640|
+|19    |neural_network__GCB11                |           1|      2688|
+|20    |neural_network__GCB12                |           1|       646|
+|21    |neural_network_control__GCB0         |           1|       128|
+|22    |case__347_neural_network_control__GD |           1|        64|
+|23    |case__348_neural_network_control__GD |           1|        64|
+|24    |neural_network_control__GCB3         |           1|       128|
+|25    |neural_network_control__GCB4         |           1|       247|
+|26    |neural_network_control__GCB6         |           1|       640|
++------+-------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn/x_t_reg[1][63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn/x_t_reg[2][63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nn/y_out_reg[63] )
+INFO: [Synth 8-5365] Flop nn/forward/is_valid_reg[0] is being inverted and renamed to nn/forward/is_valid_reg[0]_inv.
+INFO: [Synth 8-6064] Net n_0_3401 is driving 75 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_3834 is driving 75 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_3757 is driving 75 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_3969 is driving 75 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:23 ; elapsed = 00:06:16 . Memory (MB): peak = 1138.996 ; gain = 601.957
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:23 ; elapsed = 00:06:17 . Memory (MB): peak = 1138.996 ; gain = 601.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:24 ; elapsed = 00:06:18 . Memory (MB): peak = 1138.996 ; gain = 601.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:25 ; elapsed = 00:06:18 . Memory (MB): peak = 1138.996 ; gain = 601.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:26 ; elapsed = 00:06:20 . Memory (MB): peak = 1138.996 ; gain = 601.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:26 ; elapsed = 00:06:20 . Memory (MB): peak = 1138.996 ; gain = 601.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |   779|
+|3     |DSP48E1   |    26|
+|4     |DSP48E1_1 |    18|
+|5     |DSP48E1_2 |    12|
+|6     |DSP48E1_3 |     4|
+|7     |DSP48E1_4 |     4|
+|8     |DSP48E1_5 |     8|
+|9     |LUT1      |  2357|
+|10    |LUT2      |  1159|
+|11    |LUT3      |  1213|
+|12    |LUT4      |  1781|
+|13    |LUT5      |  2889|
+|14    |LUT6      | 10175|
+|15    |MUXF7     |  1252|
+|16    |MUXF8     |   214|
+|17    |FDCE      |   647|
+|18    |FDRE      |  2534|
+|19    |FDSE      |     4|
+|20    |LD        |   320|
+|21    |IBUF      |  2085|
+|22    |OBUF      |    84|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------+-------------------+------+
+|      |Instance             |Module             |Cells |
++------+---------------------+-------------------+------+
+|1     |top                  |                   | 27568|
+|2     |  nn                 |neural_network     | 24264|
+|3     |    backward         |calculate_backward |  8202|
+|4     |    forward          |calculate_forward  |  2938|
+|5     |      \luts[0].luts  |lut                |    64|
+|6     |      \luts[1].luts  |lut_0              |    64|
+|7     |      \luts[2].luts  |lut_1              |    65|
+|8     |      \luts[3].luts  |lut_2              |    64|
+|9     |    ram              |weight_ram         |  5446|
++------+---------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:26 ; elapsed = 00:06:20 . Memory (MB): peak = 1138.996 ; gain = 601.957
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 21 critical warnings and 165 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:06 ; elapsed = 00:06:14 . Memory (MB): peak = 1138.996 ; gain = 435.648
+Synthesis Optimization Complete : Time (s): cpu = 00:05:27 ; elapsed = 00:06:22 . Memory (MB): peak = 1138.996 ; gain = 601.957
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2637 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1138.996 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 320 instances were transformed.
+  LD => LDCE: 320 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+185 Infos, 242 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:41 ; elapsed = 00:06:40 . Memory (MB): peak = 1138.996 ; gain = 848.043
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1138.996 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.runs/synth_1/neural_network_control.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1138.996 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file neural_network_control_utilization_synth.rpt -pb neural_network_control_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 10 21:37:58 2021...

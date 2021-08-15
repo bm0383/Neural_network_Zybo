@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/constants_package.vhd" \
+"../../../../fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd" \
+"../../../../fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd" \
+"../../../../fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd" \
+"../../../../fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd" \
+"../../../../fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd" \
+"../../../../fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/weight_ram.vhd" \
+"../../../../fa_fs.srcs/sim_1/imports/KONCNI_IMPORT/tb.vhd" \
+
+# Do not sort compile order
+nosort

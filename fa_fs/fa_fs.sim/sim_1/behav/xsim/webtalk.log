@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Aug 11 21:10:27 2021
+# Process ID: 14344
+# Current directory: C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 91.379 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Wed Aug 11 21:10:36 2021...

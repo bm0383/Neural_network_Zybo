@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.sim/sim_1/synth/timing/xsim/tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculate_backward
+INFO: [VRFC 10-311] analyzing module calculate_forward
+INFO: [VRFC 10-311] analyzing module lut
+INFO: [VRFC 10-311] analyzing module lut_0
+INFO: [VRFC 10-311] analyzing module lut_1
+INFO: [VRFC 10-311] analyzing module lut_2
+INFO: [VRFC 10-311] analyzing module neural_network
+INFO: [VRFC 10-311] analyzing module neural_network_control
+INFO: [VRFC 10-311] analyzing module weight_ram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sim_1/imports/KONCNI_IMPORT/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb'

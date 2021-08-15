@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1628623855">
+  <File Type="PA-TCL" Name="neural_network_control.tcl"/>
+  <File Type="REPORTS-TCL" Name="neural_network_control_reports.tcl"/>
+  <File Type="RDS-RDS" Name="neural_network_control.vds"/>
+  <File Type="RDS-UTIL" Name="neural_network_control_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="neural_network_control_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="neural_network_control.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/KONCNI_IMPORT/constants_package.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../KONCNI_IMPORT/constants_package.vhd"/>
+        <Attr Name="ImportTime" Val="1621977116"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../KONCNI_IMPORT/calculate_backward.vhd"/>
+        <Attr Name="ImportTime" Val="1617438033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../KONCNI_IMPORT/calculate_forward.vhd"/>
+        <Attr Name="ImportTime" Val="1617437765"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/KONCNI_IMPORT/lut.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../KONCNI_IMPORT/lut.vhd"/>
+        <Attr Name="ImportTime" Val="1621539938"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/KONCNI_IMPORT/neural_network.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../KONCNI_IMPORT/neural_network.vhd"/>
+        <Attr Name="ImportTime" Val="1621971398"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/KONCNI_IMPORT/weight_ram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../KONCNI_IMPORT/weight_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1621762301"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../KONCNI_IMPORT/neural_network_control.vhd"/>
+        <Attr Name="ImportTime" Val="1621977173"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_file.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="neural_network_control"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Zybo-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Zybo-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1613937005"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

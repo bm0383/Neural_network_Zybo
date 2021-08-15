@@ -1,0 +1,24 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto fbbfcb93b3604f96a79ab6f3b1613786 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_behav xil_defaultlib.tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'inputs' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:97]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'goals' [C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd:98]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.instruction_buffer_type
+Compiling architecture behavioral of entity xil_defaultlib.lut [\lut(bit_width=16,f=8)\]
+Compiling architecture rtl of entity xil_defaultlib.calculate_forward [\calculate_forward(ports=4,num_o...]
+Compiling architecture behavioral of entity xil_defaultlib.weight_ram [\weight_ram(bit_width=16,max_neu...]
+Compiling architecture behavioral of entity xil_defaultlib.calculate_backward [\calculate_backward(bit_width=16...]
+Compiling architecture behavioral of entity xil_defaultlib.neural_network [\neural_network(num_of_inputs=4,...]
+Compiling architecture behavioral of entity xil_defaultlib.neural_network_control [neural_network_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb
+Built simulation snapshot tb_behav

@@ -1,0 +1,15 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/constants_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_backward.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calculate_backward'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/calculate_forward.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'calculate_forward'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/lut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lut'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'neural_network'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/neural_network_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'neural_network_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sources_1/imports/KONCNI_IMPORT/weight_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'weight_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Blaz/Desktop/KONCNA_VERZIJA/fa_fs/fa_fs.srcs/sim_1/imports/KONCNI_IMPORT/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb'
