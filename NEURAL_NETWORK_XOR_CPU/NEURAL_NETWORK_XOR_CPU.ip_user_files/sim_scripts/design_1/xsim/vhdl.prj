@@ -1,0 +1,15 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/f292/hdl/XOR_IP_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/f292/src/constants_package.vhd" \
+"../../../bd/design_1/ipshared/f292/src/calculate_backward.vhd" \
+"../../../bd/design_1/ipshared/f292/src/calculate_forward.vhd" \
+"../../../bd/design_1/ipshared/f292/src/lut.vhd" \
+"../../../bd/design_1/ipshared/f292/src/neural_network.vhd" \
+"../../../bd/design_1/ipshared/f292/src/neural_network_control.vhd" \
+"../../../bd/design_1/ipshared/f292/src/weight_ram.vhd" \
+"../../../bd/design_1/ipshared/f292/hdl/XOR_IP_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_XOR_IP_0_0/sim/design_1_XOR_IP_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort

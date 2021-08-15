@@ -1,0 +1,414 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Aug 15 17:54:24 2021
+| Host         : DESKTOP-0B5CPTC running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 75
++----------+----------+------------------------+------------+
+| Rule     | Severity | Description            | Violations |
++----------+----------+------------------------+------------+
+| DPIP-1   | Warning  | Input pipelining       | 20         |
+| DPOP-1   | Warning  | PREG Output pipelining | 24         |
+| DPOP-2   | Warning  | MREG Output pipelining | 24         |
+| PDRC-153 | Warning  | Gated clock check      | 7          |
++----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG__0 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG__0 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__1 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__10 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__11 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__13 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__14 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__14/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__5 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__7 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__7/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__9 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__9/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__0 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__1 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__1 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__2 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__3 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__4 input design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG__0 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__0 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__1 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__10 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__11 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__12 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__12/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__13 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__14 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__14/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__2 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__3 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__4 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__5 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__6 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__7 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__7/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__8 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__8/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__9 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__9/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__0 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__1 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__2 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__3 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__4 output design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG__0 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/ARG__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__0 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__1 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__10 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__11 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__11/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__12 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__13 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__13/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__14 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__14/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__2 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__3 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__4 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__5 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__6 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__7 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__7/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__8 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__8/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__9 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/backward/ARG__9/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__0 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__1 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__2 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__3 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__4 multiplier stage design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/forward/ARG__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[31]_i_2/O, cell design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[47]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[47]_i_2/O, cell design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[47]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[63]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[63]_i_2/O, cell design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[63]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[95]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[95]_i_2/O, cell design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/nn_control/nn/w_inputs_pop_reg[95]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/reg_data_out_reg[11]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/reg_data_out_reg[11]_i_2/O, cell design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/reg_data_out_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/reg_data_out_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/reg_data_out_reg[1]_i_2/O, cell design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/reg_data_out_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/reg_data_out_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/reg_data_out_reg[31]_i_2/O, cell design_1_i/XOR_IP_0/U0/XOR_IP_v1_0_S00_AXI_inst/reg_data_out_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+
